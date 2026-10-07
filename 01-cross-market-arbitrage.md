@@ -51,8 +51,10 @@ can still be cancelled as usual, and that is exactly how legs disappear (below: 
   leg will vanish completes 2 full sets out of 28 ($0.72). In 25 the first leg simply does not fill.
 - **Before kick-off** (no delay): 82 candidates, all would have filled, but the edge is tiny: **$1.55 combined** at up to $10 per leg,
   none at >= 2 c. (Separate pass: candidate time vs. Gamma `gameStartTime`; the CSV has no pre-match / in-play column.)
-- **Who takes the vanished legs** (on-chain trades at the ask +/- 0.5 c within 10 s): of 41 vanished legs, other takers took 24,
-  makers pulled 17. A "pure race" (fastest wins) applies to 11 of 27 candidates, with a ceiling of $13.8 over 15 h if you win EVERY one.
+- **Who takes the vanished legs** (on-chain trades on that leg at the ask or up to 0.5 c below it, from 2 s before to 10 s after the
+  candidate): 27 of the >= 2 c candidates lost at least one leg within 1 s, 41 legs in total; other takers took 24, makers pulled 17.
+  A "pure race" (every vanished leg taken by other takers, none cancelled) applies to 11 of those 27. Winning EVERY one of these races
+  would have made $13.83 in total at up to $10 per leg, over the same ~18 h run.
 
 ## Conclusion
 
